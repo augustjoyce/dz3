@@ -12,13 +12,13 @@ public class Sum {
 
 	public static void getSumOfDigits(double x) {
 		String s;
-		s = String.valueOf(x); // Преобразование числа в строку
+		s = String.valueOf(x); // РџСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёРµ С‡РёСЃР»Р° РІ СЃС‚СЂРѕРєСѓ
 
-		char[] ch = s.toCharArray(); // Преобразование строки в массив символов
+		char[] ch = s.toCharArray(); // РџСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёРµ СЃС‚СЂРѕРєРё РІ РјР°СЃСЃРёРІ СЃРёРјРІРѕР»РѕРІ
 		int sum = 0; 
 		for (int j = 0; j < ch.length; j++) {
-			if (ch[j] == '.') continue; // Игнорирование точки в записи дабла
-			int i = Character.getNumericValue(ch[j]); // Получение числового значение символа
+			if (ch[j] == '.') continue; // РРіРЅРѕСЂРёСЂРѕРІР°РЅРёРµ С‚РѕС‡РєРё РІ Р·Р°РїРёСЃРё РґР°Р±Р»Р°
+			int i = Character.getNumericValue(ch[j]); // РџРѕР»СѓС‡РµРЅРёРµ С‡РёСЃР»РѕРІРѕРіРѕ Р·РЅР°С‡РµРЅРёРµ СЃРёРјРІРѕР»Р°
 			sum += i;
 		}
 
